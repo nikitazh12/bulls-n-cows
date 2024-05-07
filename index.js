@@ -27,10 +27,10 @@ const playGame = () => {
   const maxAttempts = 10;
 
   while (true) { 
-    let guess = readlineSync.question('Введите ваше число (4 цифры):');
+    let guess = readlineSync.question(`Осталось попыток: ${maxAttempts - attempts}. Введите ваше число (4 цифры): `);
     while (isNaN(guess) || guess.length !== 4 || /(\d).*\1/.test(guess)) {
       console.log('Неверный ввод. Введите 4 уникальные цифры');
-      guess = readlineSync.question(`Введите ваше число (4 цифры). Осталось попыток: ${maxAttempts - attempts}`);
+      guess = readlineSync.question(`Осталось попыток: ${maxAttempts - attempts}. Введите ваше число (4 цифры): `);
     }
     attempts += 1;
     const result = checkGuess(secret, guess);
@@ -46,4 +46,6 @@ const playGame = () => {
     }
  }
 };
+
 playGame();
+
