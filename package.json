@@ -1,0 +1,29 @@
+{
+  "name": "bulls-n-cows",
+  "version": "1.0.0",
+  "description": "bulls and cows node game",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikitazh12/bulls-n-cows.git"
+  },
+  "author": "Nikita Zholnerovskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikitazh12/bulls-n-cows/issues"
+  },
+  "homepage": "https://github.com/nikitazh12/bulls-n-cows#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1"
+  }
+}
